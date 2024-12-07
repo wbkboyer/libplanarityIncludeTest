@@ -1,0 +1,50 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: (Linux) [Debug] gcc build test project",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-DDEBUG", // Added so that _DEBUG is defined; see appconst.h
+                "-Wall",
+                "-Wextra",
+                "-g",
+                "${workspaceFolder}/test.c",
+                "-o",
+                "${workspaceFolder}/Debug/test"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "compiler: /usr/bin/gcc"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: (Linux) [Release] gcc build test project",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-O3",
+                "-Wall",
+                "-Wextra",
+                "-g",
+                "${workspaceFolder}/test.c",
+                "-o",
+                "${workspaceFolder}/Release/test"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "compiler: /usr/bin/gcc"
+        }
+    ],
+    "version": "2.0.0"
+}

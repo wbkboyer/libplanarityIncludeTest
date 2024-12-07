@@ -1,0 +1,46 @@
+{
+    "configurations": [
+        {
+            "name": "C/C++: (Linux) [Debug] gcc build and debug test project",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Debug/test",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: (Linux) [Debug] gcc build test project"
+        },
+        {
+            "name": "C/C++: (Linux) [Release] gcc build and run test project",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Release/test",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [],
+            "preLaunchTask": "C/C++: (Linux) [Release] gcc build test project"
+        }
+    ],
+    "version": "2.0.0"
+}
