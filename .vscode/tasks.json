@@ -9,10 +9,13 @@
                 "-DDEBUG", // Added so that _DEBUG is defined; see appconst.h
                 "-Wall",
                 "-Wextra",
+                "-I/usr/local/include",
+                "-L/usr/local/lib",
                 "-g",
                 "${workspaceFolder}/test.c",
                 "-o",
-                "${workspaceFolder}/Debug/test"
+                "${workspaceFolder}/Debug/test",
+                "-lplanarity"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -31,10 +34,13 @@
                 "-O3",
                 "-Wall",
                 "-Wextra",
+                "-I/usr/local/include",
+                "-L/usr/local/lib",
                 "-g",
                 "${workspaceFolder}/test.c",
                 "-o",
-                "${workspaceFolder}/Release/test"
+                "${workspaceFolder}/Release/test",
+                "-lplanarity"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
