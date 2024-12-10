@@ -8,7 +8,10 @@ extern "C"
 
 #include <stdio.h>
 
-#include <planarity/c/graphLib/graph.h>
+    // #include <planarity/c/graphLib/graph.h>
+    // #include <c/graphLib/graph.h>
+
+#include <graph.h>
 
 #ifdef __cplusplus
 }
