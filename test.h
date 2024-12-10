@@ -8,13 +8,11 @@ extern "C"
 
 #include <stdio.h>
 
-    // #include <planarity/c/graphLib/graph.h>
-    // #include <c/graphLib/graph.h>
-
-#include <graph.h>
-
-#ifdef __cplusplus
-}
-#endif
+// NOTE: If this include fails, you need to update your
+// tasks.json -I linker flag with the correct includedir
+// for planarity on your distribution. On Debian linux,
+// this is /usr/local/include, which has a subdirectory
+// called planarity that contains the project header files.
+#include <planarity/graphLib.h>
 
 #endif

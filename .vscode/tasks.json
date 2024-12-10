@@ -9,7 +9,7 @@
                 "-DDEBUG", // Added so that _DEBUG is defined; see appconst.h
                 "-Wall",
                 "-Wextra",
-                "-I/usr/local/include/planarity",
+                "-I/usr/local/include",
                 "-L/usr/local/lib",
                 "-g",
                 "${workspaceFolder}/test.c",
@@ -34,7 +34,7 @@
                 "-O3",
                 "-Wall",
                 "-Wextra",
-                "-I/usr/local/include/planarity",
+                "-I/usr/local/include",
                 "-L/usr/local/lib",
                 "-g",
                 "${workspaceFolder}/test.c",
