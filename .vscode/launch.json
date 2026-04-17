@@ -5,7 +5,9 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/Debug/test",
-            "args": [],
+            "args": [
+                // TODO: Must add the graph input filename
+            ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
